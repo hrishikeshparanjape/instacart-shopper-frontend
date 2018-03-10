@@ -29,11 +29,10 @@ class Enroll extends Component {
                 <legend className="">Enroll</legend>
               </div>
               <div className="control-group">
-                
-                <label className="control-label"  htmlFor="username">Username</label>
+                <label className="control-label"  htmlFor="fullname">Full Name</label>
                 <div className="controls">
-                  <input type="text" id="username" name="username" placeholder="" className="input-xlarge"></input>
-                  <p className="help-block">Username can contain any letters or numbers, without spaces</p>
+                  <input type="text" id="fullname" name="fullname" placeholder="" className="input-xlarge"></input>
+                  <p className="help-block">Full Name</p>
                 </div>
               </div>
            
@@ -48,19 +47,19 @@ class Enroll extends Component {
            
               <div className="control-group">
                 
-                <label className="control-label" htmlFor="password">Password</label>
+                <label className="control-label" htmlFor="phone">Phone Number</label>
                 <div className="controls">
-                  <input type="password" id="password" name="password" placeholder="" className="input-xlarge"></input>
-                  <p className="help-block">Password should be at least 4 characters</p>
+                  <input type="text" id="phone" name="phone" placeholder="" className="input-xlarge"></input>
+                  <p className="help-block">Please provide your phone number</p>
                 </div>
               </div>
            
               <div className="control-group">
                 
-                <label className="control-label"  htmlFor="password_confirm">Password (Confirm)</label>
+                <label className="control-label"  htmlFor="Location">Address</label>
                 <div className="controls">
-                  <input type="password" id="password_confirm" name="password_confirm" placeholder="" className="input-xlarge"></input>
-                  <p className="help-block">Please confirm password</p>
+                  <input type="text" id="address" name="address" placeholder="" className="input-xlarge"></input>
+                  <p className="help-block">Please provide your full address. Using this address, we will assign you appropriate shopping location.</p>
                 </div>
               </div>
            

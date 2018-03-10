@@ -5,6 +5,9 @@ class Confirm extends Component {
   
   constructor(props) {
     super(props);
+    this.onYesButtonClick = this.onYesButtonClick.bind(this);
+    this.onNoButtonClick = this.onNoButtonClick.bind(this);
+
   }
 
   componentWillUnmount() {
@@ -13,6 +16,14 @@ class Confirm extends Component {
 
   componentDidMount() {
     console.log("Confirm mounted");
+  }
+
+  onYesButtonClick() {
+    this.props.parent.updatePage('done');
+  }
+
+  onNoButtonClick() {
+    this.props.parent.updatePage('home');
   }
 
   render() {
@@ -24,10 +35,10 @@ class Confirm extends Component {
           <div className="container">
             <div className="row">
                 <div className="col-xs-6">
-                    <button className="btn btn-success btn-block">Yes</button>
+                    <button className="btn btn-success btn-block" onClick={this.onYesButtonClick}>Yes</button>
                 </div>
                 <div className="col-xs-6">
-                    <button className="btn btn-warning btn-block">No</button>
+                    <button className="btn btn-warning btn-block" onClick={this.onNoButtonClick}>No</button>
                 </div>
             </div>
           </div>
