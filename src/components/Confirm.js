@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import './Confirm.css';
 
 class Confirm extends Component {
@@ -19,6 +20,25 @@ class Confirm extends Component {
   }
 
   onYesButtonClick() {
+    /*
+    var config = {
+      headers: {'Access-Control-Allow-Origin': '*'}
+    };
+    axios.post('localhost:8080/applicant', {
+      name: 'Rishi',
+      email: 'hrishikeshp19@gmail.com',
+      address: 'San Francisco',
+      phone: '4084168414'
+    }, config)
+    .then(function (response) {
+      console.log(response);
+      this.props.parent.updatePage('done');
+    })
+    .catch(function (error) {
+      console.log(error);
+      this.props.parent.updatePage('done');
+    });
+    */
     this.props.parent.updatePage('done');
   }
 
