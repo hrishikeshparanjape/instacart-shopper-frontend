@@ -1,6 +1,6 @@
 ## instacart-shopper-frontend
 
-The main purpose of this application to enroll shoppers into instagram. This application handles back-end functionalities.
+The main purpose of this application to enroll shoppers into instcart. This application handles back-end functionalities.
 
 ## requirements
 1. npm
